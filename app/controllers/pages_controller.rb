@@ -3,4 +3,9 @@ class PagesController < ApplicationController
    @articles = Article.all
    @article = Article.last
  end
+
+ def bio
+ end
+ def contact
+ end
 end

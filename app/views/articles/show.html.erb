@@ -1,16 +1,17 @@
 
 <div>
- <div class="banner" style="background-image: url('<%= image_path('img2.png')%> ');  background-position: center;">
+ <div class="banner" style="background-image: url('<%= cl_image_path @article.photo%>  ');  background-position: center; ">
   <div class="banner-content">
     <h1><%= @article.title%></h1>
-    <p><i class="fa fa-map-pin"></i> By: Solsea</p>
-    <h6><%= @article.location %></h6>
+    <h6 class="loc">By:</h6>
+    <p class="solsea-banner">SolSea</p>
+    <h6 class="loc"><i class="fa fa-map-pin"></i> <%= @article.location %></h6>
   </div>
 </div>
 </div>
 <div class="content">
   <hr>
-  <div class="container text-center">
+  <div class="container text-justify">
     <p><%= @article.description%></p>
   </div>
   <hr>

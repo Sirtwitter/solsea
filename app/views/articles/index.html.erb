@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 class="title">Blog</h1>
+  <hr>
+  <% @articles.each do |article| %>
+  <%= link_to article_path(article) do %>
+  <h4 class="title"><%=article.title%></h4>
+  <%end%>
+  <p><%= link_to "Edit", edit_article_path(article)%> <%= link_to "Delete",article_path(article), method: :delete %>
+</p>
+  <%end%>
+  <%= link_to "Add Article", new_article_path, class: "btn btn-info title" %>
+
+</div>
+
+

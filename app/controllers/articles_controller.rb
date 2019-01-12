@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-      @article = Article.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def update
@@ -36,6 +36,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :short_desc, :description, :location,)
+    params.require(:article).permit(:title, :short_desc, :description, :location, :photo)
   end
 end

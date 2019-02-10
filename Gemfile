@@ -10,8 +10,11 @@ gem 'jquery-rails'
 gem "font-awesome-rails"
 gem 'simple_form'
 gem 'carrierwave', '~> 1.2'
+gem 'slim-rails', '3.1.1'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.9.1'
+gem 'ckeditor'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.7'

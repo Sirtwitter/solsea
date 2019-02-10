@@ -12,6 +12,11 @@ p{
 .loc{
   font-family: 'Questrial', sans-serif;
 }
+
+.profile {
+  margin-right: 100px;
+  margin-left: 100px;
+}
 .avatar {
   vertical-align: middle;
   width: 200px;
@@ -50,7 +55,7 @@ font-size: 20px;
 .banner {
   color:white;
   text-align: center;
-  height:calc(70vh - 80px);;
+  height:calc(60vh - 80px);;
   width: 100%;
   background-size: cover !important;
   background-position: center;
@@ -110,6 +115,21 @@ font-size: 20px;
 }
 .content{
 
+}
+#socialnet ul{
+  list-style: none;
+}
+#socialnet li{
+  display: inline;
+}
+
+.size-me{
+font-size:35px;
+padding-left:10px;
+}
+.menu2 h3{
+   font-family: 'Megrim', cursive;
+font-size:40px;
 }
 
 .contact{

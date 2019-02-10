@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   get 'pages/home'
   get 'pages/bio', to: 'pages#bio'
   get 'pages/contact', to: 'pages#contact'

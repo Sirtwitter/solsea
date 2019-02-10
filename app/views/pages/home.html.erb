@@ -1,36 +1,74 @@
 <div>
   <% if @article %>
- <div class="banner" style="background-image: url('<%= cl_image_path @article.photo%> ');  background-position: center; ">
-  <div class="banner-content">
-    <h1><%= @article.title%></h1>
-    <h6 class="loc">By:</h6>
-    <p class="solsea-banner">SolSea</p>
-    <h6 class="loc"><i class="fa fa-map-pin"></i> <%= @article.location %></h6>
+  <div class="banner" style="background-image: url('<%= cl_image_path @article.photo%> ');  background-position: center; ">
+    <div class="banner-content">
+      <h1><%= @article.title%></h1>
+      <h6 class="loc">By:</h6>
+      <p class="solsea-banner">SolSea</p>
+      <h6 class="loc"><i class="fa fa-map-pin"></i> <%= @article.location %></h6>
+    </div>
+    <% end %>
   </div>
-  <% end %>
 </div>
-</div>
-<div class="blog">
-  <hr>
-  <div class="container">
-    <div class="row">
-      <% if @articles %>
-      <% @articles.each do |article| %>
-      <div class="col-xs-12 col-sm-12 col-md-6 text-center">
-        <%= link_to article_path(article) do %>
-        <div class="post">
-          <%= cl_image_tag article.photo, crop: :fill,  height: 300, width: 500, class: "img-fluid"%>
-          <h2 class="title"><%= article.title %></h2>
-          <p class="solsea">SolSea</p>
-          <h6 class="loc"><i class="fa fa-map-pin"></i> <%= article.location %></h6>
-          <br>
+<div class="row">
+  <div class="col-md-8">
+    <div class="blog">
+      <hr>
+      <div class="container">
+        <div class="row">
+          <% if @articles %>
+          <% @articles.each do |article| %>
+          <div class="col-xs-12 col-sm-12 col-md-6 text-center">
+            <%= link_to article_path(article) do %>
+            <div class="post">
+              <%= cl_image_tag article.photo, crop: :fill,  height: 300, width: 500, class: "img-fluid"%>
+              <h2 class="title"><%= article.title %></h2>
+              <p class="solsea">SolSea</p>
+              <h6 class="loc"><i class="fa fa-map-pin"></i> <%= article.location %></h6>
+              <br>
+              <% end %>
+            </div>
+          </div>
+          <% end %>
           <% end %>
         </div>
       </div>
-      <% end %>
-      <% end %>
+      <hr>
     </div>
   </div>
-  <hr>
+  <div class="col-md-4">
+    <div class="text-center blog">
+      <div class="menu2">
+        <hr>
+        <h3>Follow me</h3>
+        <div id="socialnet" class="text-center">
+          <ul>
+           <li class="size-me"><a href="https://instagram.com/solsea"><i class="fa fa-instagram"></i></a></li>
+
+           <li class="size-me"><a href="https://facebook.com/solsea"><i class="fa fa-facebook"></i></a></li>
+         </ul>
+         <hr>
+       </div>
+      <!-- <h3>Mapa</h3>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="523" id="gmap_canvas" src="https://maps.google.com/maps?q=Panam%C3%A1%2C%20Panam%C3%A1&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net"></a></div><style>.mapouter{text-align:right;height:500px;width:523px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:523px;}</style></div> -->
+        <h3>Profile</h3>
+        <div class="text-center">
+          Lorem ipsum dolor sit amet, ne dicunt perfecto adipisci ius. Sea recusabo persecuti no. An pro dignissim maiestatis adolescens ...
+        </div>
+        <br>
+        <p class="btn btn-info ">LEER MÁS</p>
+          <hr>
+        <h3>Tools</h3>
+        <img src="https://lawestmedia.com/wp-content/uploads/2018/04/bigstock-210884860a-e1523545314777.jpg" alt="" height="50">
+        <!-- <div id="socialnet" class="text-center">
+          <ul>
+           <li class="size-me"><a href="https://instagram.com/solsea"><i class="fa fa-instagram"></i></a></li>
+
+           <li class="size-me"><a href="https://facebook.com/solsea"><i class="fa fa-facebook"></i></a></li>
+         </ul>
+       </div> -->
+        <hr>
+      </div>
+    </div>
+  </div>
 </div>
-<div>

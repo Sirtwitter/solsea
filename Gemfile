@@ -7,6 +7,7 @@ end
 
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'mini_magick'
 gem "font-awesome-rails"
 gem 'simple_form'
 gem 'carrierwave', '~> 1.2'

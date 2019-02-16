@@ -1,3 +1,4 @@
+require "ckeditor/orm/active_record"
 
 Ckeditor.setup do |config|
   # //cdn.ckeditor.com/<version.number>/<distribution>/ckeditor.js

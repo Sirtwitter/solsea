@@ -6,7 +6,6 @@ git_source(:github) do |repo_name|
 end
 
 gem 'bootstrap'
-gem 'jquery-rails'
 gem 'mini_magick'
 gem "font-awesome-rails"
 gem 'simple_form'
@@ -15,6 +14,8 @@ gem 'slim-rails', '3.1.1'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.9.1'
 gem 'ckeditor'
+
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

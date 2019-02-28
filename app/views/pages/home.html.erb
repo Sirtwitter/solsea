@@ -10,42 +10,65 @@
     <% end %>
   </div>
 </div>
-<div class="row">
-  <div class="col-md-8">
-    <div class="blog">
-      <hr>
-      <div class="container">
-        <div class="row">
-          <% if @articles %>
-          <% @articles.each do |article| %>
-          <div class="col-xs-12 col-sm-12 col-md-6 text-center">
-            <%= link_to article_path(article) do %>
-            <div class="post">
-              <%= cl_image_tag article.photo, crop: :fill,  height: 300, width: 500, class: "img-fluid"%>
-              <h2 class="title"><%= article.title %></h2>
-              <p class="solsea">SolSea</p>
-              <h6 class="loc"><i class="fa fa-map-pin"></i> <%= article.location %></h6>
-              <br>
-              <% end %>
-            </div>
+
+<div class="container hidden-lg hidden-md">
+ <br>
+ <hr>
+ <div class="row">
+  <% if @articles %>
+  <% @articles.each do |article| %>
+  <div class="col-xs-12 col-sm-12 col-md-6 text-center">
+    <%= link_to article_path(article) do %>
+    <div class="post">
+      <%= cl_image_tag article.photo, crop: :fill,  height: 300, width: 500, class: "img-fluid"%>
+      <h2 class="title"><%= article.title %></h2>
+      <h4 class="solsea">SolSea</h4>
+      <h5 class="loc"><i class="fa fa-map-pin"></i> <%= article.location %></h5>
+      <br>
+      <% end %>
+    </div>
+  </div>
+  <% end %>
+  <% end %>
+</div>
+<br>
+<hr>
+</div>
+<div class=" hidden-xs hidden-sm">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="conatiner">
+       <br>
+       <hr>
+       <div class="row">
+        <% if @articles %>
+        <% @articles.each do |article| %>
+        <div class="col-xs-12 col-sm-12 col-md-6 text-center">
+          <%= link_to article_path(article) do %>
+          <div class="post">
+            <%= cl_image_tag article.photo, crop: :fill,  height: 300, width: 500, class: "img-fluid"%>
+            <h2 class="title"><%= article.title %></h2>
+            <h4 class="solsea">SolSea</h4>
+            <h5 class="loc"><i class="fa fa-map-pin"></i> <%= article.location %></h5>
+            <br>
+            <% end %>
           </div>
-          <% end %>
-          <% end %>
         </div>
+        <% end %>
+        <% end %>
       </div>
+      <br>
       <hr>
     </div>
   </div>
   <div class="col-md-4">
-    <div class="text-center blog">
-      <div class="menu2">
+    <div class="menu2 text-center" style="padding-top: 20px">
         <hr>
         <h3>Follow me</h3>
         <div id="socialnet" class="text-center">
-         <!--  <ul>
-           <li class="size-me"> --><a href="https://instagram.com/solsea"><i class="fa fa-instagram" style="font-size: 50px"></i><!-- </a></li> -->
-           <!-- <li class="size-me"> --><a href="https://facebook.com/solsea"><i class="fa fa-facebook" style="font-size: 50px"></i></a><!-- </li>
-         </ul> -->
+
+           <a href="https://instagram.com/solsea" style="color:black"><i class="fa fa-instagram" style="font-size: 50px"></i> </a>
+           <a href="https://facebook.com/solsea" style="color:black"><i class="fa fa-facebook" style="font-size: 50px"></i></a>
          <hr>
        </div>
        <h3>Profile</h3>
@@ -54,16 +77,22 @@
         Hola! Soy Celena Cerrud, una panameñita enamorada de su país ...
       </div>
       <br>
+      <%= link_to pages_bio_path do %>
       <p class="btn btn-info ">LEER MÁS</p>
+      <% end %>
       <hr>
-      <h3>Mapa</h3>
-       <div class="text-center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252147.3752059298!2d-79.59322187198373!3d9.081727549496206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca8f1dbe80363%3A0xaba25df1f042c10e!2sPanama+City!5e0!3m2!1sen!2spa!4v1550464343686" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <h3>Ubicacion</h3>
+       <div class="text-center">
+        <img src="http://cdn4.breitlingforbentley.com/bundles/breitlingretailers/images/maps/asset-version-ecfebe18a8-PA.png" height="150">
+        <h5>Panamá</h5>
        </div>
        <hr>
-      <h3>Tools</h3>
+      <h3>Heramientas</h3>
       <img src="https://lawestmedia.com/wp-content/uploads/2018/04/bigstock-210884860a-e1523545314777.jpg" alt="" height="50">
        <hr>
-     </div>
-   </div>
- </div>
+
+</div>
+
+  </div>
+</div>
 </div>
